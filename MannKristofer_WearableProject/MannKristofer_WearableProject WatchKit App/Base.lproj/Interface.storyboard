@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--GenerateInterface-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="GenerateInterface" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MannKristofer_WearableProject_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <slider width="1" alignment="left" value="8" minimum="4" maximum="16" steps="12" id="JAg-b5-Fgu">
+                            <color key="color" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="sliderChangedValue:" destination="AgC-eL-Hgc" id="X3p-mZ-FkM"/>
+                            </connections>
+                        </slider>
+                        <label width="19" height="26" alignment="center" text="8" textAlignment="center" id="5Xn-5L-nrW"/>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Generate" id="rXL-19-GVy">
+                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="generatePasswords" destination="AgC-eL-Hgc" id="hT4-zJ-zoY"/>
+                            </connections>
+                        </button>
+                        <button width="0.20000000000000001" height="0.20000000000000001" alignment="center" verticalAlignment="center" backgroundImage="settingsIcon" id="A5H-7N-rzm">
+                            <connections>
+                                <action selector="settingsButton" destination="AgC-eL-Hgc" id="MLg-OA-Of3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lengthLabel" destination="5Xn-5L-nrW" id="wNv-5q-bIT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="40"/>
+        </scene>
+        <!--PasswordsTable-->
+        <scene sceneID="yuf-qk-WeP">
+            <objects>
+                <controller identifier="PasswordsTable" id="jLW-F0-FT0" customClass="PasswordInterfaceController" customModule="MannKristofer_WearableProject_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="ySA-LO-9MH">
+                            <items>
+                                <tableRow identifier="Row" selectable="NO" id="tKl-iW-Fkq" customClass="PasswordRowController" customModule="MannKristofer_WearableProject_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="JDJ-K1-Dij">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" numberOfLines="2" id="GlB-yI-4nV">
+                                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="passwordLabel" destination="GlB-yI-4nV" id="TIt-nz-fef"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="passwordsTable" destination="ySA-LO-9MH" id="2ii-Uw-sOg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="276" y="38"/>
+        </scene>
+        <!--SettingsInterface-->
+        <scene sceneID="Ao2-48-vpv">
+            <objects>
+                <controller identifier="SettingsInterface" id="hiu-Cl-ftn" customClass="SettingsInterfaceController" customModule="MannKristofer_WearableProject_WatchKit_Extension">
+                    <items>
+                        <switch width="1" height="0.25" alignment="left" verticalAlignment="center" value="YES" title="Lower" id="HKG-RI-xsa">
+                            <connections>
+                                <action selector="lowerSwitchChangedValue:" destination="hiu-Cl-ftn" id="Yko-qb-JSL"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" height="0.25" alignment="left" verticalAlignment="center" value="YES" title="Upper" id="Mf0-Os-9Kn">
+                            <connections>
+                                <action selector="upperSwitchChangedValue:" destination="hiu-Cl-ftn" id="WIa-so-iqh"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" height="0.25" alignment="left" verticalAlignment="center" value="YES" title="Numbers" id="rx8-C6-amV">
+                            <connections>
+                                <action selector="numbersSwitchChangedValue:" destination="hiu-Cl-ftn" id="fqF-TV-yLX"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" height="0.25" alignment="left" verticalAlignment="center" value="YES" title="Symbols" id="yIN-vh-nkG">
+                            <connections>
+                                <action selector="symbolsSwitchChangedValue:" destination="hiu-Cl-ftn" id="jaa-wB-iwp"/>
+                            </connections>
+                        </switch>
+                    </items>
+                    <connections>
+                        <outlet property="lowerSwitch" destination="HKG-RI-xsa" id="RbJ-nm-dDJ"/>
+                        <outlet property="numbersSwitch" destination="rx8-C6-amV" id="uTr-uf-V2k"/>
+                        <outlet property="symbolsSwitch" destination="yIN-vh-nkG" id="Vf3-No-Wf6"/>
+                        <outlet property="upperSwitch" destination="Mf0-Os-9Kn" id="G4p-5Z-n1J"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="374"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6985713B1F4F4B9D004D2F11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6985713A1F4F4B9D004D2F11 /* ViewController.swift */; };
+		6985713D1F4F5D1A004D2F11 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6985713C1F4F5D1A004D2F11 /* TableViewCell.swift */; };
+		69BF3C7F1F40BD1D0016E81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF3C7E1F40BD1D0016E81A /* AppDelegate.swift */; };
+		69BF3C841F40BD1D0016E81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BF3C821F40BD1D0016E81A /* Main.storyboard */; };
+		69BF3C861F40BD1D0016E81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BF3C851F40BD1D0016E81A /* Assets.xcassets */; };
+		69BF3C891F40BD1D0016E81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BF3C871F40BD1D0016E81A /* LaunchScreen.storyboard */; };
+		69BF3C8E1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 69BF3C8D1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App.app */; };
+		69BF3C941F40BD1D0016E81A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BF3C921F40BD1D0016E81A /* Interface.storyboard */; };
+		69BF3C961F40BD1D0016E81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BF3C951F40BD1D0016E81A /* Assets.xcassets */; };
+		69BF3C9D1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69BF3C9C1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69BF3CA21F40BD1E0016E81A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF3CA11F40BD1D0016E81A /* InterfaceController.swift */; };
+		69BF3CA41F40BD1E0016E81A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF3CA31F40BD1E0016E81A /* ExtensionDelegate.swift */; };
+		69BF3CA61F40BD1E0016E81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BF3CA51F40BD1E0016E81A /* Assets.xcassets */; };
+		69BF3CB61F40BD630016E81A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF3CB51F40BD630016E81A /* TableViewController.swift */; };
+		69BF3CB81F40D1A60016E81A /* PasswordInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF3CB71F40D1A60016E81A /* PasswordInterfaceController.swift */; };
+		69BF3CBA1F40D3D40016E81A /* SettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF3CB91F40D3D40016E81A /* SettingsInterfaceController.swift */; };
+		69BF3CBE1F40D70E0016E81A /* PasswordRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF3CBD1F40D70E0016E81A /* PasswordRowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69BF3C8F1F40BD1D0016E81A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69BF3C731F40BD1D0016E81A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69BF3C8C1F40BD1D0016E81A;
+			remoteInfo = "MannKristofer_WearableProject WatchKit App";
+		};
+		69BF3C9E1F40BD1D0016E81A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69BF3C731F40BD1D0016E81A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69BF3C9B1F40BD1D0016E81A;
+			remoteInfo = "MannKristofer_WearableProject WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		69BF3CAD1F40BD1E0016E81A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				69BF3C9D1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69BF3CB11F40BD1E0016E81A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				69BF3C8E1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6985713A1F4F4B9D004D2F11 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6985713C1F4F5D1A004D2F11 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		69BF3C7B1F40BD1D0016E81A /* MannKristofer_WearableProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MannKristofer_WearableProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69BF3C7E1F40BD1D0016E81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69BF3C831F40BD1D0016E81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69BF3C851F40BD1D0016E81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69BF3C881F40BD1D0016E81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69BF3C8A1F40BD1D0016E81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69BF3C8D1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MannKristofer_WearableProject WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69BF3C931F40BD1D0016E81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		69BF3C951F40BD1D0016E81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69BF3C971F40BD1D0016E81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69BF3C9C1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MannKristofer_WearableProject WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69BF3CA11F40BD1D0016E81A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		69BF3CA31F40BD1E0016E81A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		69BF3CA51F40BD1E0016E81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69BF3CA71F40BD1E0016E81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69BF3CB51F40BD630016E81A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		69BF3CB71F40D1A60016E81A /* PasswordInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordInterfaceController.swift; sourceTree = "<group>"; };
+		69BF3CB91F40D3D40016E81A /* SettingsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceController.swift; sourceTree = "<group>"; };
+		69BF3CBD1F40D70E0016E81A /* PasswordRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69BF3C781F40BD1D0016E81A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69BF3C991F40BD1D0016E81A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69BF3C721F40BD1D0016E81A = {
+			isa = PBXGroup;
+			children = (
+				69BF3C7D1F40BD1D0016E81A /* MannKristofer_WearableProject */,
+				69BF3C911F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App */,
+				69BF3CA01F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension */,
+				69BF3C7C1F40BD1D0016E81A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69BF3C7C1F40BD1D0016E81A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69BF3C7B1F40BD1D0016E81A /* MannKristofer_WearableProject.app */,
+				69BF3C8D1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App.app */,
+				69BF3C9C1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69BF3C7D1F40BD1D0016E81A /* MannKristofer_WearableProject */ = {
+			isa = PBXGroup;
+			children = (
+				69BF3C7E1F40BD1D0016E81A /* AppDelegate.swift */,
+				69BF3C821F40BD1D0016E81A /* Main.storyboard */,
+				69BF3C851F40BD1D0016E81A /* Assets.xcassets */,
+				69BF3C871F40BD1D0016E81A /* LaunchScreen.storyboard */,
+				69BF3C8A1F40BD1D0016E81A /* Info.plist */,
+				69BF3CB51F40BD630016E81A /* TableViewController.swift */,
+				6985713A1F4F4B9D004D2F11 /* ViewController.swift */,
+				6985713C1F4F5D1A004D2F11 /* TableViewCell.swift */,
+			);
+			path = MannKristofer_WearableProject;
+			sourceTree = "<group>";
+		};
+		69BF3C911F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				69BF3C921F40BD1D0016E81A /* Interface.storyboard */,
+				69BF3C951F40BD1D0016E81A /* Assets.xcassets */,
+				69BF3C971F40BD1D0016E81A /* Info.plist */,
+			);
+			path = "MannKristofer_WearableProject WatchKit App";
+			sourceTree = "<group>";
+		};
+		69BF3CA01F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				69BF3CA11F40BD1D0016E81A /* InterfaceController.swift */,
+				69BF3CB71F40D1A60016E81A /* PasswordInterfaceController.swift */,
+				69BF3CB91F40D3D40016E81A /* SettingsInterfaceController.swift */,
+				69BF3CA31F40BD1E0016E81A /* ExtensionDelegate.swift */,
+				69BF3CBD1F40D70E0016E81A /* PasswordRowController.swift */,
+				69BF3CA51F40BD1E0016E81A /* Assets.xcassets */,
+				69BF3CA71F40BD1E0016E81A /* Info.plist */,
+			);
+			path = "MannKristofer_WearableProject WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69BF3C7A1F40BD1D0016E81A /* MannKristofer_WearableProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69BF3CB21F40BD1E0016E81A /* Build configuration list for PBXNativeTarget "MannKristofer_WearableProject" */;
+			buildPhases = (
+				69BF3C771F40BD1D0016E81A /* Sources */,
+				69BF3C781F40BD1D0016E81A /* Frameworks */,
+				69BF3C791F40BD1D0016E81A /* Resources */,
+				69BF3CB11F40BD1E0016E81A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69BF3C901F40BD1D0016E81A /* PBXTargetDependency */,
+			);
+			name = MannKristofer_WearableProject;
+			productName = MannKristofer_WearableProject;
+			productReference = 69BF3C7B1F40BD1D0016E81A /* MannKristofer_WearableProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69BF3C8C1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69BF3CAE1F40BD1E0016E81A /* Build configuration list for PBXNativeTarget "MannKristofer_WearableProject WatchKit App" */;
+			buildPhases = (
+				69BF3C8B1F40BD1D0016E81A /* Resources */,
+				69BF3CAD1F40BD1E0016E81A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69BF3C9F1F40BD1D0016E81A /* PBXTargetDependency */,
+			);
+			name = "MannKristofer_WearableProject WatchKit App";
+			productName = "MannKristofer_WearableProject WatchKit App";
+			productReference = 69BF3C8D1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		69BF3C9B1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69BF3CAA1F40BD1E0016E81A /* Build configuration list for PBXNativeTarget "MannKristofer_WearableProject WatchKit Extension" */;
+			buildPhases = (
+				69BF3C981F40BD1D0016E81A /* Sources */,
+				69BF3C991F40BD1D0016E81A /* Frameworks */,
+				69BF3C9A1F40BD1D0016E81A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MannKristofer_WearableProject WatchKit Extension";
+			productName = "MannKristofer_WearableProject WatchKit Extension";
+			productReference = 69BF3C9C1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69BF3C731F40BD1D0016E81A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kristofer Klae Mann";
+				TargetAttributes = {
+					69BF3C7A1F40BD1D0016E81A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XG473G374W;
+						ProvisioningStyle = Automatic;
+					};
+					69BF3C8C1F40BD1D0016E81A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XG473G374W;
+						ProvisioningStyle = Automatic;
+					};
+					69BF3C9B1F40BD1D0016E81A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XG473G374W;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 69BF3C761F40BD1D0016E81A /* Build configuration list for PBXProject "MannKristofer_WearableProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69BF3C721F40BD1D0016E81A;
+			productRefGroup = 69BF3C7C1F40BD1D0016E81A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69BF3C7A1F40BD1D0016E81A /* MannKristofer_WearableProject */,
+				69BF3C8C1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App */,
+				69BF3C9B1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69BF3C791F40BD1D0016E81A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69BF3C891F40BD1D0016E81A /* LaunchScreen.storyboard in Resources */,
+				69BF3C861F40BD1D0016E81A /* Assets.xcassets in Resources */,
+				69BF3C841F40BD1D0016E81A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69BF3C8B1F40BD1D0016E81A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69BF3C961F40BD1D0016E81A /* Assets.xcassets in Resources */,
+				69BF3C941F40BD1D0016E81A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69BF3C9A1F40BD1D0016E81A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69BF3CA61F40BD1E0016E81A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69BF3C771F40BD1D0016E81A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6985713B1F4F4B9D004D2F11 /* ViewController.swift in Sources */,
+				6985713D1F4F5D1A004D2F11 /* TableViewCell.swift in Sources */,
+				69BF3CB61F40BD630016E81A /* TableViewController.swift in Sources */,
+				69BF3C7F1F40BD1D0016E81A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69BF3C981F40BD1D0016E81A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69BF3CA41F40BD1E0016E81A /* ExtensionDelegate.swift in Sources */,
+				69BF3CA21F40BD1E0016E81A /* InterfaceController.swift in Sources */,
+				69BF3CBA1F40D3D40016E81A /* SettingsInterfaceController.swift in Sources */,
+				69BF3CBE1F40D70E0016E81A /* PasswordRowController.swift in Sources */,
+				69BF3CB81F40D1A60016E81A /* PasswordInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69BF3C901F40BD1D0016E81A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69BF3C8C1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit App */;
+			targetProxy = 69BF3C8F1F40BD1D0016E81A /* PBXContainerItemProxy */;
+		};
+		69BF3C9F1F40BD1D0016E81A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69BF3C9B1F40BD1D0016E81A /* MannKristofer_WearableProject WatchKit Extension */;
+			targetProxy = 69BF3C9E1F40BD1D0016E81A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69BF3C821F40BD1D0016E81A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69BF3C831F40BD1D0016E81A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69BF3C871F40BD1D0016E81A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69BF3C881F40BD1D0016E81A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		69BF3C921F40BD1D0016E81A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69BF3C931F40BD1D0016E81A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69BF3CA81F40BD1E0016E81A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69BF3CA91F40BD1E0016E81A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69BF3CAB1F40BD1E0016E81A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = XG473G374W;
+				INFOPLIST_FILE = "MannKristofer_WearableProject WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fullsail.MannKristofer-WearableProject.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		69BF3CAC1F40BD1E0016E81A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = XG473G374W;
+				INFOPLIST_FILE = "MannKristofer_WearableProject WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fullsail.MannKristofer-WearableProject.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		69BF3CAF1F40BD1E0016E81A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XG473G374W;
+				IBSC_MODULE = MannKristofer_WearableProject_WatchKit_Extension;
+				INFOPLIST_FILE = "MannKristofer_WearableProject WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fullsail.MannKristofer-WearableProject.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		69BF3CB01F40BD1E0016E81A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XG473G374W;
+				IBSC_MODULE = MannKristofer_WearableProject_WatchKit_Extension;
+				INFOPLIST_FILE = "MannKristofer_WearableProject WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fullsail.MannKristofer-WearableProject.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		69BF3CB31F40BD1E0016E81A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XG473G374W;
+				INFOPLIST_FILE = MannKristofer_WearableProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fullsail.MannKristofer-WearableProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		69BF3CB41F40BD1E0016E81A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XG473G374W;
+				INFOPLIST_FILE = MannKristofer_WearableProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fullsail.MannKristofer-WearableProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69BF3C761F40BD1D0016E81A /* Build configuration list for PBXProject "MannKristofer_WearableProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69BF3CA81F40BD1E0016E81A /* Debug */,
+				69BF3CA91F40BD1E0016E81A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69BF3CAA1F40BD1E0016E81A /* Build configuration list for PBXNativeTarget "MannKristofer_WearableProject WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69BF3CAB1F40BD1E0016E81A /* Debug */,
+				69BF3CAC1F40BD1E0016E81A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69BF3CAE1F40BD1E0016E81A /* Build configuration list for PBXNativeTarget "MannKristofer_WearableProject WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69BF3CAF1F40BD1E0016E81A /* Debug */,
+				69BF3CB01F40BD1E0016E81A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69BF3CB21F40BD1E0016E81A /* Build configuration list for PBXNativeTarget "MannKristofer_WearableProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69BF3CB31F40BD1E0016E81A /* Debug */,
+				69BF3CB41F40BD1E0016E81A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69BF3C731F40BD1D0016E81A /* Project object */;
+}
