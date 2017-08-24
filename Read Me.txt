@@ -1,0 +1,14 @@
+Read MeKristofer Mann
+https://github.com/kkmann13/mdv5
+Device type: Apple WatchApplication: Xcode using iPhone 6s + Apple Watch Ð 38mm
+Old Functionality:* The slider can move up or down to increase or decrease the length of the passwords.* The label beneath it shows the current value of the slider.* When the Generate button is tapped, the user is taken to a screen presenting their randomly generated passwords based upon the length set.* The user can go back to the original screen to generate another set of random passwords.* The settings icon takes the user to the settings screen.New Functionality:
+* The user can now go to the settings screen and tap which switch they would like to turn on or off.
+* Turning off a switch will prevent that set of characters from being used within the generated passwords
+	Example: The user turns off all switches except the numbers. Only numbers will be in the password.  This works in any combination of switches being turned on or off.
+* If all switches are off, then nothing happens
+* The user can go back to the settings screen and see what changes they had made previously.
+* The iPhone app now has a working application
+* It has a slider, switches, and a generate button that all function exactly like the watch.
+* The user can generate random passwords exactly like the watch
+* The generate button takes the user to a Table which presents 20 random passwords.
+* There is a back button to allow the user to generate more passwords.
